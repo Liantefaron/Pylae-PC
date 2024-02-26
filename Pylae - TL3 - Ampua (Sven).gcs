@@ -673,10 +673,9 @@
 		{
 			"attr_id": "tm_pt",
 			"adj": 0,
-			"damage": 36,
 			"calc": {
 				"value": 36,
-				"current": 0,
+				"current": 36,
 				"points": 0
 			}
 		},
@@ -691,118 +690,8 @@
 	],
 	"traits": [
 		{
-			"id": "b846de85-a936-4fff-863f-472d80b82faa",
-			"type": "trait",
-			"name": "Natürliche Angriffe",
-			"reference": "B271",
-			"weapons": [
-				{
-					"id": "4a9dda89-dbac-4865-b3db-9a0777b835d3",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Biss",
-					"reach": "C",
-					"parry": "Nein",
-					"block": "Nein",
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": "Brawling"
-						}
-					],
-					"calc": {
-						"level": 15,
-						"parry": "Nein",
-						"block": "Nein",
-						"damage": "1d-2 cr"
-					}
-				},
-				{
-					"id": "8985af52-5ef0-48fa-8a90-7c0db03d8f78",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Schlag",
-					"reach": "C",
-					"parry": "0",
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": "Boxing"
-						},
-						{
-							"type": "skill",
-							"name": "Brawling"
-						},
-						{
-							"type": "skill",
-							"name": "Karate"
-						}
-					],
-					"calc": {
-						"level": 15,
-						"parry": "11",
-						"damage": "1d-2 cr"
-					}
-				},
-				{
-					"id": "a5ebf651-5ba0-47cc-bbae-69468e094f55",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr"
-					},
-					"usage": "Tritt",
-					"reach": "C,1",
-					"parry": "Nein",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Brawling",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Kicking"
-						},
-						{
-							"type": "skill",
-							"name": "Karate",
-							"modifier": -2
-						}
-					],
-					"calc": {
-						"level": 13,
-						"parry": "Nein",
-						"damage": "1d-1 cr"
-					}
-				}
-			],
-			"calc": {
-				"points": 0
-			}
-		},
-		{
 			"id": "4936556e-5ddb-418b-8661-2d46552731c3",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "412503e3-228b-4538-a0a3-fbdd5ce1b720",
@@ -2153,7 +2042,7 @@
 			],
 			"name": "Taipuisa - Hallapuisa",
 			"ancestry": "Taipuisa - Hallapuisa",
-			"container_type": "race",
+			"container_type": "ancestry",
 			"calc": {
 				"points": 93
 			}
@@ -2161,7 +2050,6 @@
 		{
 			"id": "90f4ea74-e0f2-4a08-a50a-93792a27a366",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "03bc0a25-8661-4bdf-970f-113ad565a274",
@@ -2644,7 +2532,6 @@
 		{
 			"id": "f823cdfa-2c8f-4d1d-b7cd-c3193b2aff16",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "a0dc4e23-2563-474b-a9f6-2b551c477f0d",
@@ -3288,7 +3175,6 @@
 		{
 			"id": "6ed87a0d-4ed4-4b59-adb7-10a6fe662615",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "e42f22bd-cf78-472b-a783-b3244c7d6623",
@@ -3964,7 +3850,7 @@
 								"qualifier": 2
 							},
 							"amount": 2,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -3978,7 +3864,7 @@
 								"qualifier": 2
 							},
 							"amount": 2,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -3992,7 +3878,7 @@
 								"qualifier": 2
 							},
 							"amount": 2,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -4006,7 +3892,7 @@
 								"qualifier": 2
 							},
 							"amount": 2,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -4020,7 +3906,7 @@
 								"qualifier": 2
 							},
 							"amount": 2,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -4034,7 +3920,7 @@
 								"qualifier": 1
 							},
 							"amount": 1,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -4048,7 +3934,7 @@
 								"qualifier": 1
 							},
 							"amount": 1,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -4062,7 +3948,7 @@
 								"qualifier": 1
 							},
 							"amount": 1,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -4076,7 +3962,7 @@
 								"qualifier": 1
 							},
 							"amount": 1,
-							"per_level": true
+							"per_die": true
 						},
 						{
 							"type": "weapon_bonus",
@@ -4090,7 +3976,7 @@
 								"qualifier": 1
 							},
 							"amount": 1,
-							"per_level": true
+							"per_die": true
 						}
 					],
 					"calc": {
@@ -4106,7 +3992,6 @@
 		{
 			"id": "a6706abc-9fe4-4b5c-8dab-a79927d5f37e",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "b7e07c84-eb18-4cbd-b5f3-b432d9c3376b",
@@ -4222,7 +4107,6 @@
 		{
 			"id": "a45241e9-4118-4b16-ac9b-7bc7281c7832",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "7336cd57-7923-482c-b9a2-68ff36e9642e",
@@ -4617,7 +4501,6 @@
 		{
 			"id": "75aa86b0-2ff6-4d58-8296-82fb6960aa6f",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "3cffa53d-463a-4991-ada4-ec06860b4b40",
@@ -4693,6 +4576,109 @@
 			"name": "Quirks",
 			"calc": {
 				"points": -5
+			}
+		},
+		{
+			"id": "c9962490-155b-4954-ab62-21bec9ed0a01",
+			"type": "trait",
+			"name": "Natürliche Angriffe",
+			"reference": "B271",
+			"weapons": [
+				{
+					"id": "eb143788-8a9b-4b9d-b903-836124f6e418",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Biss",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					],
+					"calc": {
+						"level": 15,
+						"damage": "1d-2 cr"
+					}
+				},
+				{
+					"id": "35419bb4-1c20-42eb-a942-aa653656984d",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Schlag",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					],
+					"calc": {
+						"level": 15,
+						"damage": "1d-2 cr",
+						"parry": "11"
+					}
+				},
+				{
+					"id": "94ecdb95-eb12-4f38-acce-a45e25715f0c",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Tritt",
+					"reach": "C,1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Kicking"
+						},
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 13,
+						"damage": "1d-1 cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
 			}
 		}
 	],
@@ -14143,9 +14129,8 @@
 					"strength": "7†",
 					"usage": "Swung",
 					"usage_notes": "Staff",
-					"reach": "1,2",
-					"parry": "+2",
-					"block": "No",
+					"reach": "1-2",
+					"parry": "2",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14168,9 +14153,8 @@
 					],
 					"calc": {
 						"level": 21,
-						"parry": "16",
-						"block": "No",
-						"damage": "1d+7(3) cr dkb"
+						"damage": "1d+7(3) cr dkb",
+						"parry": "16"
 					}
 				},
 				{
@@ -14185,9 +14169,8 @@
 					"strength": "7†",
 					"usage": "Thrust",
 					"usage_notes": "Staff",
-					"reach": "1,2",
-					"parry": "+2",
-					"block": "No",
+					"reach": "1-2",
+					"parry": "2",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14210,9 +14193,8 @@
 					],
 					"calc": {
 						"level": 21,
-						"parry": "16",
-						"block": "No",
-						"damage": "1d+5(3) cr dkb"
+						"damage": "1d+5(3) cr dkb",
+						"parry": "16"
 					}
 				},
 				{
@@ -14227,9 +14209,8 @@
 					"strength": "9†",
 					"usage": "Swung",
 					"usage_notes": "Two-Handed Sword",
-					"reach": "1,2",
+					"reach": "1-2",
 					"parry": "0",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14256,9 +14237,8 @@
 					],
 					"calc": {
 						"level": 17,
-						"parry": "12",
-						"block": "No",
-						"damage": "1d+5(3) cr dkb"
+						"damage": "1d+5(3) cr dkb",
+						"parry": "12"
 					}
 				},
 				{
@@ -14275,7 +14255,6 @@
 					"usage_notes": "Two-Handed Sword",
 					"reach": "2",
 					"parry": "0",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14302,9 +14281,8 @@
 					],
 					"calc": {
 						"level": 17,
-						"parry": "12",
-						"block": "No",
-						"damage": "1d+2(3) cr dkb"
+						"damage": "1d+2(3) cr dkb",
+						"parry": "12"
 					}
 				}
 			],
@@ -14356,9 +14334,8 @@
 					"strength": "7†",
 					"usage": "Swung",
 					"usage_notes": "Staff",
-					"reach": "1,2",
-					"parry": "+2",
-					"block": "No",
+					"reach": "1-2",
+					"parry": "2",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14381,9 +14358,8 @@
 					],
 					"calc": {
 						"level": 21,
-						"parry": "16",
-						"block": "No",
-						"damage": "1d+6 cr"
+						"damage": "1d+6 cr",
+						"parry": "16"
 					}
 				},
 				{
@@ -14397,9 +14373,8 @@
 					"strength": "7†",
 					"usage": "Thrust",
 					"usage_notes": "Staff",
-					"reach": "1,2",
-					"parry": "+2",
-					"block": "No",
+					"reach": "1-2",
+					"parry": "2",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14422,9 +14397,8 @@
 					],
 					"calc": {
 						"level": 21,
-						"parry": "16",
-						"block": "No",
-						"damage": "1d+4 cr"
+						"damage": "1d+4 cr",
+						"parry": "16"
 					}
 				},
 				{
@@ -14438,9 +14412,8 @@
 					"strength": "9†",
 					"usage": "Swung",
 					"usage_notes": "Two-Handed Sword",
-					"reach": "1,2",
+					"reach": "1-2",
 					"parry": "0",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14467,9 +14440,8 @@
 					],
 					"calc": {
 						"level": 17,
-						"parry": "12",
-						"block": "No",
-						"damage": "1d+4 cr"
+						"damage": "1d+4 cr",
+						"parry": "12"
 					}
 				},
 				{
@@ -14485,7 +14457,6 @@
 					"usage_notes": "Two-Handed Sword",
 					"reach": "2",
 					"parry": "0",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14512,9 +14483,8 @@
 					],
 					"calc": {
 						"level": 17,
-						"parry": "12",
-						"block": "No",
-						"damage": "1d+1 cr"
+						"damage": "1d+1 cr",
+						"parry": "12"
 					}
 				}
 			],
@@ -14575,8 +14545,9 @@
 					],
 					"calc": {
 						"level": 21,
+						"damage": "1d+5 imp",
 						"range": "240/300",
-						"damage": "1d+5 imp"
+						"strength": "12†"
 					}
 				}
 			],
@@ -14637,7 +14608,6 @@
 					"usage": "Swung",
 					"reach": "C,1",
 					"parry": "-1",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14669,9 +14639,8 @@
 					],
 					"calc": {
 						"level": 15,
-						"parry": "10",
-						"block": "No",
-						"damage": "1d-1 cut"
+						"damage": "1d-1 cut",
+						"parry": "10"
 					}
 				},
 				{
@@ -14685,7 +14654,6 @@
 					"usage": "Thrust",
 					"reach": "C",
 					"parry": "-1",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -14717,9 +14685,8 @@
 					],
 					"calc": {
 						"level": 15,
-						"parry": "10",
-						"block": "No",
-						"damage": "1d-1 imp"
+						"damage": "1d-1 imp",
+						"parry": "10"
 					}
 				},
 				{
@@ -14731,10 +14698,9 @@
 					},
 					"strength": "6",
 					"usage": "Thrown",
-					"accuracy": "+0",
 					"range": "x0.8/x1.5",
 					"rate_of_fire": "1",
-					"shots": "T(1)",
+					"shots": "T",
 					"bulk": "-2",
 					"defaults": [
 						{
@@ -14749,8 +14715,8 @@
 					],
 					"calc": {
 						"level": 11,
-						"range": "8/16",
-						"damage": "1d-1 imp"
+						"damage": "1d-1 imp",
+						"range": "8/16"
 					}
 				}
 			],
@@ -15072,7 +15038,7 @@
 		}
 	],
 	"created_date": "2023-05-29T19:11:58+02:00",
-	"modified_date": "2023-06-26T20:51:40+02:00",
+	"modified_date": "2024-01-16T15:23:43+01:00",
 	"calc": {
 		"swing": "1d+1",
 		"thrust": "1d-1",
